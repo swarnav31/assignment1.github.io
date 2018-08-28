@@ -1,0 +1,267 @@
+body{
+	background-image:url('Images/arsenal.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	margin: 0px auto;
+	margin-right: 0px;
+}
+
+.NavBar li{
+	display: inline;
+	text-align: center;
+	color: white;
+	width: auto;
+	margin-right: 10px;
+	font-family: 'Cutive Mono', monospace;
+	text-decoration: none;
+}
+div.hero-line h1{
+	color: white;
+	font-size: 10vw;
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	letter-spacing: 5px;
+	line-height: 1;
+	font-weight: 70;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.15); 
+	margin-top: 250px;
+	margin-bottom: 0;
+
+}
+div.hero-line h4{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-size: 5vh;
+	text-align: center;
+	font-weight: 700;
+	margin:0;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.navigation a{	
+	text-decoration: none;
+	color: white;
+}
+ul a:hover{
+	text-decoration: underline;
+	font-size: 25px;
+	width: 100%;
+	cursor: pointer;
+}
+
+/*Column Flex*/
+
+.container-1{
+	display: flex;
+	justify-content:space-between;
+	flex-flow:row wrap;
+	align-items: flex-start;
+	text-align: center;	
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container-1 div{
+	padding: 50px;
+}
+.box{
+	flex:1;
+	color: white;
+	background-color: black;
+	border-right: 1px #ccc solid;
+	justify-content:space-around;
+}
+/*
+.box-2{
+	flex:1;
+	background-color: black;
+	color: white;
+	border-right: 1px #ccc solid;
+}
+.box-3{
+	flex:1;
+	color: white;
+	background-color: black;
+}
+*/
+@media(max-width: 522)
+{
+	.content{
+	display: flex;
+	justify-content:space-between;
+	flex-flow:column wrap;
+	text-align: center;	
+    font-family: 'Rajdhani', sans-serif;
+	}
+	.content div{
+		width: 100%;
+		padding: 50px;
+	}
+	.box{
+	flex:1;
+	color: white;
+	background-color: black;
+	border-right: 1px #ccc solid;
+	justify-content:space-between;
+	width: 100%;
+}
+}
+
+/*Header Bar Flex*/
+
+.Header{
+	display:flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: flex-start;
+	text-align: center;
+	width: 100%;
+	 font-family: 'Rajdhani', sans-serif;
+	 background-color: rgba(255, 0, 0, 1);
+	 height:auto;
+}
+.Header div{
+	padding: 5px;
+}
+.logo{
+	flex: 1;
+	background-color: #ccc;
+}
+.logo a img{
+	max-height:75px;
+}
+.logo a img:hover{
+	width: 50px;
+}
+.NavBar{
+	flex: 5;
+	background-color: red;
+	text-align: center;
+	width: 100%;
+	 font-family: 'Rajdhani', sans-serif;
+	 word-spacing:25px;
+}
+.navigation{
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	text-align: center;
+}
+.NavBar ul
+{
+	text-decoration: none;
+	margin:0;
+	}
+
+@media (max-width:1080px)
+{
+	.Header{
+		display:flex;
+		flex-flow: column wrap;
+		text-align: left;
+		 font-family: 'Rajdhani', sans-serif;
+		 background-color: rgba(255, 0, 0, 0.5);
+		 height:auto;
+	}
+}
+/*Navigation Bar flex*/
+header{
+	position: fixed;
+	top:0;
+	flex-direction:column;
+}
+
+.NavBar ul li{
+	padding: 10px;
+	font-size: 20px;
+	/*rder-left	: 1px #ccc solid;*/
+}
+ul.navigation{
+	font-size: 5vh;
+}
+
+
+/*REGISTRATION*/
+footer{
+	clear:both;
+	text-align: center;
+	color: black;
+}
+
+.registration div{
+	margin:0px;
+}
+div.regt li{
+	list-style: none;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+	text-decoration: none;
+	text-decoration: bold;
+}
+div.registration ul{
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+
+}
+label{
+	display: block;
+	padding-bottom: 10px;
+	margin-right: 0;
+	padding-bottom: 5px;
+	font-size: x-large;
+	font-weight: 800;
+}
+div.registration h4{
+	background-color: black;
+	font-family: 'Rajdhani', sans-serif;
+	text-decoration: none;
+	font-size: 8vw;
+	margin:0;
+	text-align: left;
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+div.registration{
+	background-image:url('Images/gooner.jpg');
+	max-width:100%;
+	background-size: cover;
+	font-family: 'Rajdhani', sans-serif;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 0,0, 1);
+}
+
+
+.social h2{
+	text-align: center;
+}
+.sms{
+	display: flex;
+}
+.sms div{
+	padding: 50px;
+}
+.facebook{
+	flex:2;
+
+}
+.instagram{
+	flex:1;
+}
+.twitter{
+	flex:2;
+}
+.media{
+	display:flex;
+}
+.media div{
+	border:1px #ccc solid;
+	padding: 10px;
+}
+
+@media screen and ()
