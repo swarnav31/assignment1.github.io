@@ -3,15 +3,34 @@ body{
 	margin: 0px auto;
 	margin-right: 0px;
 }
+body, html{
+	height: 100%;
+}
 .Hero{
 	
-	background-image:url('Images/arsenal.jpg');
+	background-image:url('Images/Arsene.jpg');
 	z-index: -1;
 	min-height: 100vh;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	position: relative;
+	background-attachment: fixed;
+    background-position: center;
 	width:100%;
+	text-align: center;
+}
+.parallax {
+    /* The image used */
+    background-image: url("Images/arsenal.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .NavBar li{
 	display: inline;
@@ -22,12 +41,12 @@ body{
 	font-family: 'Cutive Mono', monospace;
 	text-decoration: none;
 }
-.Hero h1{
+.parallax h1{
 	color: white;	
   	position: absolute;
  	top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -65%);
+  	transform: translate(-50%, -50%);
 	font-size: 10vw;
 	text-align: center;
 	font-family: 'Julius Sans One', sans-serif;
@@ -53,6 +72,14 @@ body{
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.4);
 }
+.Hero input
+{
+	color: white;
+	background-color: rgba(0,0,0,.15);
+	position: absolute;
+	top: 50%;
+	padding: 20px;
+}
 .navigation a{	
 	text-decoration: none;
 	color: white;
@@ -69,59 +96,6 @@ ul a:hover{
 	background-color: white;
 	
 }
-/*Column Flex*/
-
-.container-1{
-	display: flex;
-	justify-content:space-around;
-	flex-flow:row wrap;
-	align-items: flex-start;
-	text-align: center;	
-    font-family: 'Rajdhani', sans-serif;
-}
-
-.container-1 div{
-	padding: 50px;
-	box-sizing: border-box;
-}
-.box{
-	flex:1;
-	color: white;
-	background-color: black;
-	border-right: 1px #ccc solid;
-	justify-content:space-between;
-}
-.box img{
-	width: 200px;
-	height:100px;
-}
-.box a{
-	color: goldenrod;
-}
-
-@media(max-width: 522)
-{
-	.container-1{
-	display: flex;
-	justify-content:space-between;
-	flex-flow:column wrap;
-	text-align: center;	
-    font-family: 'Rajdhani', sans-serif;
-	}
-	.container-1 div{
-		width: 100%;
-		padding: 50px;
-	}
-	.box{
-	flex:1;
-	color: white;
-	background-color: black;
-	border-right: 1px #ccc solid;
-	justify-content:space-between;
-	width: 100%;
-}
-}
-
 /*Header Bar Flex*/
 
 .Header{
@@ -233,6 +207,100 @@ ul.navigation{
 }
 
 
+
+/*Column Flex*/
+
+.container-1{
+	display: flex;
+	justify-content:space-around;
+	flex-flow:row wrap;
+	align-items: flex-start;
+	text-align: center;	
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container-1 div{
+	padding: 50px;
+	box-sizing: border-box;
+}
+.box{
+	flex:1;
+	color: white;
+	
+	border-right: 1px #ccc solid;
+	justify-content:space-between;
+}
+.box img{
+	width: 200px;
+	height:100px;
+}
+.box a{
+	color: goldenrod;
+}
+
+@media(max-width: 522)
+{
+	.container-1{
+	display: flex;
+	justify-content:space-between;
+	flex-flow:column wrap;
+	text-align: center;	
+    font-family: 'Rajdhani', sans-serif;
+	}
+	.container-1 div{
+		width: 100%;
+		padding: 50px;
+	}
+	.box{
+	flex:1;
+	color: white;
+	background-color: black;
+	border-right: 1px #ccc solid;
+	justify-content:space-between;
+	width: 100%;
+}
+}
+/*Match Highlights*/
+.av 
+{
+	color: goldenrod;
+	text-align: center;
+	margin: auto;
+	font-family: 'Rajdhani', sans-serif;
+	text-shadow: 1px 1px rgb(243, 179, 4);
+}
+
+.vid{
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: space-between;
+}
+.vid iframe{
+	padding: 10px;
+	margin: auto;
+	border: 1px #ccc solid;
+}
+@media(max-width:600px)
+{
+	.vid iframe
+	{
+		width:100%;
+	}
+}
+@media (max-width:1020px)
+{
+	.vid
+	{
+	display: flex;
+	flex-flow: column nowrap;
+	}
+	.vid hl{
+		widows: 75%;
+		align-items: center;
+		margin: auto;
+		padding: 10vw;
+	}
+}
 /*REGISTRATION*/
 footer{
 	clear:both;
