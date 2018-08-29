@@ -72,13 +72,14 @@ body, html{
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.4);
 }
-.Hero input
+.Hero button
 {
 	color: white;
 	background-color: rgba(0,0,0,.15);
 	position: absolute;
 	top: 50%;
 	padding: 20px;
+	cursor: pointer;
 }
 .navigation a{	
 	text-decoration: none;
@@ -305,12 +306,15 @@ ul.navigation{
 footer{
 	clear:both;
 	text-align: center;
-	color: black;
+	color:black;
 	box-sizing: border-box;
 }
 
 .registration div{
 	margin:0px;
+}
+.regt{
+	padding-bottom: 5px;
 }
 div.regt li{
 	list-style: none;
@@ -318,23 +322,37 @@ div.regt li{
 	margin-bottom: 20px;
 	text-decoration: none;
 	text-decoration: bold;
+	align-items: center;
 }
 div.registration ul{
 	list-style: none;
 	margin: 0;
+	color: wheat;
 	padding: 10px;
 	box-sizing: border-box;
+	text-align: center;
+}
+.go input{
+	padding: 2vw;
+	cursor: pointer;
+	text-align: center;
+	margin: auto;
+}
+.go input:hover{
+	color: goldenrod;
+	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
+	padding: 2.5vw;
 }
 label{
 	
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	margin-right: 0;
 	padding-bottom: 5px;
 	font-size: x-large;
 	font-weight: 800;
 	box-sizing: border-box;
 }
-div.registration h4{
+.registration h4{
 	background-color: black;
 	font-family: 'Rajdhani', sans-serif;
 	text-decoration: none;
@@ -347,7 +365,7 @@ div.registration h4{
 	background-color: rgba(255, 255, 255, 0.3);
 }
 div.registration{
-	background-image:url('Images/gooner.jpg');
+	background-image:url('Images/crest.jpg');
 	max-width:100%;
 	background-size: 100% 100%;
 	font-family: 'Rajdhani', sans-serif;
