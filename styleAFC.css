@@ -1,14 +1,18 @@
 body{
-	background-image:url('Images/arsenal.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
 	background-color: black;
 	margin: 0px auto;
 	margin-right: 0px;
 }
-
+.Hero{
+	
+	background-image:url('Images/arsenal.jpg');
+	z-index: -1;
+	min-height: 100vh;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	width:100%;
+}
 .NavBar li{
 	display: inline;
 	text-align: center;
@@ -18,8 +22,12 @@ body{
 	font-family: 'Cutive Mono', monospace;
 	text-decoration: none;
 }
-div.hero-line h1{
-	color: white;
+.Hero h1{
+	color: white;	
+  	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -65%);
 	font-size: 10vw;
 	text-align: center;
 	font-family: 'Julius Sans One', sans-serif;
@@ -27,11 +35,11 @@ div.hero-line h1{
 	line-height: 1;
 	font-weight: 70;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.15); 
-	margin-top: 250px;
-	margin-bottom: 0;
+	margin: 0;
 
 }
-div.hero-line h4{
+
+.Hero h4{
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
@@ -39,7 +47,10 @@ div.hero-line h4{
 	text-align: center;
 	font-weight: 700;
 	margin:0;
-	position: relative;
+	letter-spacing: 5px;
+	position: absolute;
+	top: 70%;
+	width: 100%;
 	background-color: rgba(255, 255, 255, 0.4);
 }
 .navigation a{	
@@ -51,13 +62,18 @@ ul a:hover{
 	font-size: 25px;
 	width: 100%;
 	cursor: pointer;
+	color: red;
+	
 }
-
+.NavBar li:hover{
+	background-color: white;
+	
+}
 /*Column Flex*/
 
 .container-1{
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	flex-flow:row wrap;
 	align-items: flex-start;
 	text-align: center;	
@@ -66,37 +82,33 @@ ul a:hover{
 
 .container-1 div{
 	padding: 50px;
+	box-sizing: border-box;
 }
 .box{
 	flex:1;
 	color: white;
 	background-color: black;
 	border-right: 1px #ccc solid;
-	justify-content:space-around;
+	justify-content:space-between;
 }
-/*
-.box-2{
-	flex:1;
-	background-color: black;
-	color: white;
-	border-right: 1px #ccc solid;
+.box img{
+	width: 200px;
+	height:100px;
 }
-.box-3{
-	flex:1;
-	color: white;
-	background-color: black;
+.box a{
+	color: goldenrod;
 }
-*/
+
 @media(max-width: 522)
 {
-	.content{
+	.container-1{
 	display: flex;
 	justify-content:space-between;
 	flex-flow:column wrap;
 	text-align: center;	
     font-family: 'Rajdhani', sans-serif;
 	}
-	.content div{
+	.container-1 div{
 		width: 100%;
 		padding: 50px;
 	}
@@ -114,31 +126,32 @@ ul a:hover{
 
 .Header{
 	display:flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	align-items: stretch;
 	justify-content: flex-start;
-	text-align: center;
 	width: 100%;
 	 font-family: 'Rajdhani', sans-serif;
-	 background-color: rgba(255, 0, 0, 1);
-	 height:auto;
+	 background-color: rgba(255, 0, 0, 0.5);
+	 height:9vh;
 }
 .Header div{
 	padding: 5px;
 }
 .logo{
 	flex: 1;
-	background-color: #ccc;
+	background-color:black;
 }
 .logo a img{
 	max-height:75px;
+	align-content: center;
+	align-items: flex-end;
 }
 .logo a img:hover{
 	width: 50px;
 }
 .NavBar{
 	flex: 5;
-	background-color: red;
+	background: black;
 	text-align: center;
 	width: 100%;
 	 font-family: 'Rajdhani', sans-serif;
@@ -146,25 +159,61 @@ ul a:hover{
 }
 .navigation{
 	display: flex;
+	padding-top: 0.5vw;
 	justify-content: flex-end;
-	align-content: center;
-	text-align: center;
+	align-content: space-around;
+	text-align: start;
+	letter-spacing: auto;
+	word-spacing: normal;
 }
 .NavBar ul
 {
 	text-decoration: none;
 	margin:0;
 	}
-
-@media (max-width:1080px)
+@media (max-width:740px){
+	.logo{
+		display: none;
+	}
+	.Hero{
+		margin-top: 10%;
+	}
+}
+@media (max-width:744px)
 {
 	.Header{
 		display:flex;
-		flex-flow: column wrap;
 		text-align: left;
 		 font-family: 'Rajdhani', sans-serif;
 		 background-color: rgba(255, 0, 0, 0.5);
 		 height:auto;
+	}
+	.navigation{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-end;
+		align-content: center;
+		text-align: center;
+		line-height: 1vh;
+	}
+}
+@media (max-width:860px) and (min-width:744px)
+{
+	.Header{
+		display:flex;
+		text-align: left;
+		 font-family: 'Rajdhani', sans-serif;
+		 background-color: rgba(255, 0, 0, 0.5);
+		 height:auto;
+	}
+	.navigation{
+		display: flex;
+		flex-flow: row nowrap;
+		font-size: 19px;
+		justify-content: flex-end;
+		align-content: center;
+		text-align: center;
+		line-height: 1vh;
 	}
 }
 /*Navigation Bar flex*/
@@ -189,6 +238,7 @@ footer{
 	clear:both;
 	text-align: center;
 	color: black;
+	box-sizing: border-box;
 }
 
 .registration div{
@@ -205,15 +255,16 @@ div.registration ul{
 	list-style: none;
 	margin: 0;
 	padding: 10px;
-
+	box-sizing: border-box;
 }
 label{
-	display: block;
+	
 	padding-bottom: 10px;
 	margin-right: 0;
 	padding-bottom: 5px;
 	font-size: x-large;
 	font-weight: 800;
+	box-sizing: border-box;
 }
 div.registration h4{
 	background-color: black;
@@ -230,7 +281,7 @@ div.registration h4{
 div.registration{
 	background-image:url('Images/gooner.jpg');
 	max-width:100%;
-	background-size: cover;
+	background-size: 100% 100%;
 	font-family: 'Rajdhani', sans-serif;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 0,0, 1);
@@ -239,29 +290,69 @@ div.registration{
 
 .social h2{
 	text-align: center;
+	color: rgb(235, 233, 233);
+	margin:0;
+	background-color: black;
+	background: linear-gradient(to bottom, #cc0000 0%,#cc0000 45%);
 }
 .sms{
 	display: flex;
+	flex-flow: row wrap;
+	color: silver;
+	
 }
 .sms div{
 	padding: 50px;
 }
-.facebook{
+.address{
 	flex:2;
+	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
+	font-family: Arial, Helvetica, sans-serif;
+}
+.media{
+	flex:3;
+	background: linear-gradient(135deg, #45484d 0%,#000000 100%);
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.facebook{
+	flex:1;
 
 }
 .instagram{
 	flex:1;
 }
 .twitter{
-	flex:2;
-}
-.media{
-	display:flex;
+	flex:1;
 }
 .media div{
-	border:1px #ccc solid;
-	padding: 10px;
+	padding: 2vw;
 }
+.twitter i{
+	color: rgb(41, 174, 236);
+}
+.instagram i{
+	color:blueviolet;
+}
+.media i:hover{
+	font-size:50px;
+	text-shadow: 2px 2px rgb(243, 179, 4);
+}
+@media screen and (max-width:404px)
+{
+	.sms{
+		display: flex;
+		flex-flow: row wrap;
+		color: silver;
+	}.media{
+		flex:3;
+		background-color:black;
+		display:flex;
+		flex-flow: column wrap;
+		align-items: center;
+		font-family: Arial, Helvetica, sans-serif;
+	}
 
-@media screen and ()
+}
