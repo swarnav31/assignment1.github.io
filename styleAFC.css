@@ -19,20 +19,17 @@ body, html{
 	width:100%;
 	text-align: center;
 }
-.parallax {
-    /* The image used */
+.parallax 
+{
     background-image: url("Images/arsenal.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+	height: 100%;
+	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.NavBar li{
+.NavBar li
+{
 	display: inline;
 	text-align: center;
 	color: white;
@@ -41,7 +38,8 @@ body, html{
 	font-family: 'Cutive Mono', monospace;
 	text-decoration: none;
 }
-.parallax h1{
+.parallax h1
+{
 	color: white;	
   	position: absolute;
  	top: 50%;
@@ -145,14 +143,6 @@ ul a:hover{
 {
 	text-decoration: none;
 	margin:0;
-	}
-@media (max-width:740px){
-	.logo{
-		display: none;
-	}
-	.Hero{
-		margin-top: 10%;
-	}
 }
 @media (max-width:744px)
 {
@@ -170,6 +160,12 @@ ul a:hover{
 		align-content: center;
 		text-align: center;
 		line-height: 1vh;
+	}
+	.logo{
+		display: none;
+	}
+	.Hero{
+		margin-top: 10%;
 	}
 }
 @media (max-width:860px) and (min-width:744px)
@@ -319,13 +315,16 @@ footer{
 	background-color: black;
 }
 
-.registration div{
+.registration div
+{
 	margin:0px;
 }
-.regt{
+.regt
+{
 	padding-bottom: 5px;
 }
-div.regt li{
+div.regt li
+{
 	list-style: none;
 	font-family: sans-serif;
 	margin-bottom: 20px;
@@ -333,7 +332,8 @@ div.regt li{
 	text-decoration: bold;
 	align-items: center;
 }
-div.registration ul{
+div.registration ul
+{
 	list-style: none;
 	margin: 0;
 	color: wheat;
@@ -341,19 +341,21 @@ div.registration ul{
 	box-sizing: border-box;
 	text-align: center;
 }
-.go input{
+.go input
+{
 	padding: 2vw;
 	cursor: pointer;
 	text-align: center;
 	margin: auto;
 }
-.go input:hover{
+.go input:hover
+{
 	color: goldenrod;
 	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
 	padding: 2.5vw;
 }
-label{
-	
+label
+{
 	padding-bottom: 20px;
 	margin-right: 0;
 	padding-bottom: 5px;
@@ -361,7 +363,8 @@ label{
 	font-weight: 800;
 	box-sizing: border-box;
 }
-.registration h4{
+.registration h4
+{
 	background-color: black;
 	font-family: 'Julius Sans One', sans-serif;
 	text-decoration: none;
@@ -373,7 +376,8 @@ label{
 	position: relative;
 	background-color: rgba(255, 255, 255, 0.3);
 }
-div.registration{
+div.registration
+{
 	background-image:url('Images/crest.jpg');
 	max-width:100%;
 	background-size: 100% 100%;
@@ -382,32 +386,38 @@ div.registration{
 	background-color: rgba(255, 0,0, 1);
 }
 
+/*Social Media*/
 
-.social h2{
+.social h2
+{
 	text-align: center;
 	color: rgb(235, 233, 233);
 	margin:0;
 	background-color: black;
 	background: linear-gradient(to bottom, #cc0000 0%,#cc0000 45%);
 }
-.sms{
+.sms
+{
 	display: flex;
 	flex-flow: row wrap;
-	color: silver;
-	
+	color: silver;	
 }
-.sms div{
+.sms div
+{
 	padding: 50px;
 }
-.address{
+.address
+{
 	flex:2;
 	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
 	font-family: 'Julius Sans One', sans-serif;
 }
-.media h3{
+.media h3
+{
 	font-family: 'Julius Sans One', sans-serif;
 }
-.media{
+.media
+{
 	flex:3;
 	background: linear-gradient(135deg, #45484d 0%,#000000 100%);
 	display:flex;
@@ -415,26 +425,32 @@ div.registration{
 	align-items: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.facebook{
-	flex:1;
-
-}
-.instagram{
+.facebook
+{
 	flex:1;
 }
-.twitter{
+.instagram
+{
 	flex:1;
 }
-.media div{
+.twitter
+{
+	flex:1;
+}
+.media div
+{
 	padding: 2vw;
 }
-.twitter i{
+.twitter i
+{
 	color: rgb(41, 174, 236);
 }
-.instagram i{
+.instagram i
+{
 	color:blueviolet;
 }
-.media i:hover{
+.media i:hover
+{
 	font-size:50px;
 	text-shadow: 2px 2px rgb(243, 179, 4);
 }
