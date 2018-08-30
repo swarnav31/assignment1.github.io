@@ -95,7 +95,7 @@ ul a:hover{
 }
 .NavBar li:hover{
 	background-color: white;
-	
+	-webkit-text-fill-color: red;
 }
 /*Header Bar Flex*/
 
@@ -209,7 +209,7 @@ ul.navigation{
 
 
 
-/*Column Flex*/
+/*Content Flex*/
 
 .container-1{
 	display: flex;
@@ -231,9 +231,16 @@ ul.navigation{
 	border-right: 1px #ccc solid;
 	justify-content:space-between;
 }
+.box:hover{
+	background-color: rgba(255, 0,0, 0.1);
+}
 .box img{
 	width: 200px;
 	height:100px;
+}
+.box img:hover{
+	width:300px;
+	height:150px;
 }
 .box a{
 	color: goldenrod;
@@ -307,7 +314,9 @@ footer{
 	clear:both;
 	text-align: center;
 	color:black;
+	font-family: 'Julius Sans One', sans-serif;
 	box-sizing: border-box;
+	background-color: black;
 }
 
 .registration div{
@@ -354,7 +363,7 @@ label{
 }
 .registration h4{
 	background-color: black;
-	font-family: 'Rajdhani', sans-serif;
+	font-family: 'Julius Sans One', sans-serif;
 	text-decoration: none;
 	font-size: 8vw;
 	margin:0;
@@ -393,7 +402,10 @@ div.registration{
 .address{
 	flex:2;
 	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Julius Sans One', sans-serif;
+}
+.media h3{
+	font-family: 'Julius Sans One', sans-serif;
 }
 .media{
 	flex:3;
