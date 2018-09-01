@@ -1,35 +1,36 @@
-body{
+body {
 	background-color: black;
 	margin: 0px auto;
 	margin-right: 0px;
 }
-body, html{
+
+body, html {
 	height: 100%;
 }
-.Hero{
-	
-	background-image:url('Images/Arsene.jpg');
+
+.Hero {
+	background-image: url('Images/Arsene.jpg');
 	z-index: -1;
 	min-height: 100vh;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	position: relative;
 	background-attachment: fixed;
-    background-position: center;
-	width:100%;
+	background-position: center;
+	width: 100%;
 	text-align: center;
 }
-.parallax 
-{
-    background-image: url("Images/arsenal.jpg");
+
+.parallax {
+	background-image: url("Images/arsenal.jpg");
 	height: 100%;
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.NavBar li
-{
+
+.NavBar li {
 	display: inline;
 	text-align: center;
 	color: white;
@@ -38,99 +39,107 @@ body, html{
 	font-family: 'Cutive Mono', monospace;
 	text-decoration: none;
 }
-.parallax h1
-{
-	color: white;	
-  	position: absolute;
- 	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+
+.parallax h1 {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	font-size: 10vw;
 	text-align: center;
 	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 5px;
 	line-height: 1;
 	font-weight: 70;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.15); 
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
 	margin: 0;
-
 }
 
-.Hero h4{
+.Hero h4 {
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
 	font-size: 5vh;
 	text-align: center;
 	font-weight: 700;
-	margin:0;
+	margin: 0;
 	letter-spacing: 5px;
 	position: absolute;
 	top: 70%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.4);
 }
-.Hero button
-{
+
+.Hero button {
 	color: white;
-	background-color: rgba(0,0,0,.15);
+	background-color: rgba(0, 0, 0, .15);
 	position: absolute;
 	top: 50%;
 	padding: 20px;
 	cursor: pointer;
 }
-.navigation a{	
+
+.navigation a {
 	text-decoration: none;
 	color: white;
 }
-ul a:hover{
+
+ul a:hover {
 	text-decoration: underline;
 	font-size: 25px;
 	width: 100%;
 	cursor: pointer;
 	color: red;
-	
 }
-.NavBar li:hover{
+
+.NavBar li:hover {
 	background-color: white;
 	-webkit-text-fill-color: red;
 }
+
 /*Header Bar Flex*/
 
-.Header{
-	display:flex;
+.Header {
+	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
 	justify-content: flex-start;
 	width: 100%;
-	 font-family: 'Rajdhani', sans-serif;
-	 background-color: rgba(255, 0, 0, 0.5);
-	 height:9vh;
+	font-family: 'Rajdhani', sans-serif;
+	background-color: rgba(255, 0, 0, 0.5);
+	height: 9vh;
 }
-.Header div{
+
+.Header div {
 	padding: 5px;
 }
-.logo{
+
+.logo {
 	flex: 1;
-	background-color:black;
+	background-color: black;
 }
-.logo a img{
-	max-height:75px;
+
+.logo a img {
+	max-height: 75px;
 	align-content: center;
 	align-items: flex-end;
 }
-.logo a img:hover{
+
+.logo a img:hover {
 	width: 50px;
 }
-.NavBar{
+
+.NavBar {
 	flex: 5;
 	background: black;
 	text-align: center;
 	width: 100%;
-	 font-family: 'Rajdhani', sans-serif;
-	 word-spacing:25px;
+	font-family: 'Rajdhani', sans-serif;
+	word-spacing: 25px;
 }
-.navigation{
+
+.navigation {
 	display: flex;
 	padding-top: 0.5vw;
 	justify-content: flex-end;
@@ -139,21 +148,21 @@ ul a:hover{
 	letter-spacing: auto;
 	word-spacing: normal;
 }
-.NavBar ul
-{
+
+.NavBar ul {
 	text-decoration: none;
-	margin:0;
+	margin: 0;
 }
-@media (max-width:744px)
-{
-	.Header{
-		display:flex;
+
+@media (max-width:744px) {
+	.Header {
+		display: flex;
 		text-align: left;
-		 font-family: 'Rajdhani', sans-serif;
-		 background-color: rgba(255, 0, 0, 0.5);
-		 height:auto;
+		font-family: 'Rajdhani', sans-serif;
+		background-color: rgba(255, 0, 0, 0.5);
+		height: auto;
 	}
-	.navigation{
+	.navigation {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: flex-end;
@@ -161,23 +170,23 @@ ul a:hover{
 		text-align: center;
 		line-height: 1vh;
 	}
-	.logo{
+	.logo {
 		display: none;
 	}
-	.Hero{
+	.Hero {
 		margin-top: 10%;
 	}
 }
-@media (max-width:860px) and (min-width:744px)
-{
-	.Header{
-		display:flex;
+
+@media (max-width:860px) and (min-width:744px) {
+	.Header {
+		display: flex;
 		text-align: left;
-		 font-family: 'Rajdhani', sans-serif;
-		 background-color: rgba(255, 0, 0, 0.5);
-		 height:auto;
+		font-family: 'Rajdhani', sans-serif;
+		background-color: rgba(255, 0, 0, 0.5);
+		height: auto;
 	}
-	.navigation{
+	.navigation {
 		display: flex;
 		flex-flow: row nowrap;
 		font-size: 19px;
@@ -187,86 +196,91 @@ ul a:hover{
 		line-height: 1vh;
 	}
 }
+
 /*Navigation Bar flex*/
-header{
+
+header {
 	position: fixed;
-	top:0;
-	flex-direction:column;
+	top: 0;
+	flex-direction: column;
 }
 
-.NavBar ul li{
+.NavBar ul li {
 	padding: 10px;
 	font-size: 20px;
 	/*rder-left	: 1px #ccc solid;*/
 }
-ul.navigation{
+
+ul.navigation {
 	font-size: 5vh;
 }
 
-
-
 /*Content Flex*/
 
-.container-1{
+.container-1 {
 	display: flex;
-	justify-content:space-around;
-	flex-flow:row wrap;
+	justify-content: space-around;
+	flex-flow: row wrap;
 	align-items: flex-start;
-	text-align: center;	
-    font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
 }
 
-.container-1 div{
+.container-1 div {
 	padding: 50px;
 	box-sizing: border-box;
 }
-.box{
-	flex:1;
+
+.box {
+	flex: 1;
 	color: white;
-	
 	border-right: 1px #ccc solid;
-	justify-content:space-between;
+	justify-content: space-between;
 }
-.box:hover{
-	background-color: rgba(255, 0,0, 0.1);
+
+.box:hover {
+	background-color: rgba(255, 0, 0, 0.1);
 }
-.box img{
+
+.box img {
 	width: 200px;
-	height:100px;
+	height: 100px;
 }
-.box img:hover{
-	width:300px;
-	height:150px;
+
+.box img:hover {
+	width: 300px;
+	height: 150px;
 }
-.box a{
+
+.box a {
 	color: goldenrod;
 }
 
-@media(max-width: 522)
-{
-	.container-1{
-	display: flex;
-	justify-content:space-between;
-	flex-flow:column wrap;
-	text-align: center;	
-    font-family: 'Rajdhani', sans-serif;
+@media(max-width: 522) {
+	.container-1 {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: column wrap;
+		text-align: center;
+		font-family: 'Rajdhani', sans-serif;
 	}
-	.container-1 div{
+	.container-1 div {
 		width: 100%;
 		padding: 50px;
 	}
-	.box{
-	flex:1;
-	color: white;
-	background-color: black;
-	border-right: 1px #ccc solid;
-	justify-content:space-between;
-	width: 100%;
+	.box {
+		flex: 1;
+		color: white;
+		background-color: black;
+		border-right: 1px #ccc solid;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
-}
+
 /*Match Highlights*/
-.av 
-{
+
+.av {
 	color: goldenrod;
 	text-align: center;
 	margin: auto;
@@ -274,57 +288,57 @@ ul.navigation{
 	text-shadow: 1px 1px rgb(243, 179, 4);
 }
 
-.vid{
+.vid {
 	display: flex;
 	flex-flow: row nowrap;
 	align-content: space-between;
 }
-.vid iframe{
+
+.vid iframe {
 	padding: 10px;
 	margin: auto;
 	border: 1px #ccc solid;
 }
-@media(max-width:600px)
-{
-	.vid iframe
-	{
-		width:100%;
+
+@media(max-width:600px) {
+	.vid iframe {
+		width: 100%;
 	}
 }
-@media (max-width:1020px)
-{
-	.vid
-	{
-	display: flex;
-	flex-flow: column nowrap;
+
+@media (max-width:1020px) {
+	.vid {
+		display: flex;
+		flex-flow: column nowrap;
 	}
-	.vid hl{
+	.vid hl {
 		widows: 75%;
 		align-items: center;
 		margin: auto;
 		padding: 10vw;
 	}
 }
+
 /*REGISTRATION*/
-footer{
-	clear:both;
+
+footer {
+	clear: both;
 	text-align: center;
-	color:black;
+	color: black;
 	font-family: 'Julius Sans One', sans-serif;
 	box-sizing: border-box;
 	background-color: black;
 }
 
-.registration div
-{
-	margin:0px;
+.registration div {
+	margin: 0px;
 }
-.regt
-{
+
+.regt {
 	padding-bottom: 5px;
 }
-div.regt li
-{
+
+div.regt li {
 	list-style: none;
 	font-family: sans-serif;
 	margin-bottom: 20px;
@@ -332,141 +346,141 @@ div.regt li
 	text-decoration: bold;
 	align-items: center;
 }
-div.registration ul
-{
+
+div.registration ul {
 	list-style: none;
 	margin: 0;
 	color: wheat;
 	padding: 10px;
 	box-sizing: border-box;
 	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
 }
-.go input
-{
+
+.go input {
 	padding: 2vw;
 	cursor: pointer;
 	text-align: center;
 	margin: auto;
 }
-.go input:hover
-{
+
+.go input:hover {
 	color: goldenrod;
-	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
+	background: linear-gradient(135deg, #000000 0%, #45484d 100%);
 	padding: 2.5vw;
 }
-label
-{
+
+label {
 	padding-bottom: 20px;
 	margin-right: 0;
 	padding-bottom: 5px;
 	font-size: x-large;
-	font-weight: 800;
+	font-weight: 1000;
 	box-sizing: border-box;
+	color: black;
 }
-.registration h4
-{
+
+.registration h4 {
 	background-color: black;
 	font-family: 'Julius Sans One', sans-serif;
 	text-decoration: none;
 	font-size: 8vw;
-	margin:0;
+	margin: 0;
 	text-align: left;
 	text-align: center;
-	font-weight: 700;
-	position: relative;
+	font-weight: 500;
 	background-color: rgba(255, 255, 255, 0.3);
 }
-div.registration
-{
-	background-image:url('Images/crest.jpg');
-	max-width:100%;
+
+div.registration {
+	background-image: url('Images/crest.jpg');
+	max-width: 100%;
 	background-size: 100% 100%;
 	font-family: 'Rajdhani', sans-serif;
 	background-repeat: no-repeat;
-	background-color: rgba(255, 0,0, 1);
+	background-color: rgba(255, 0, 0, 1);
 }
 
 /*Social Media*/
 
-.social h2
-{
+.social h2 {
 	text-align: center;
 	color: rgb(235, 233, 233);
-	margin:0;
+	margin: 0;
 	background-color: black;
-	background: linear-gradient(to bottom, #cc0000 0%,#cc0000 45%);
+	background: linear-gradient(to bottom, #cc0000 0%, #cc0000 45%);
 }
-.sms
-{
+
+.sms {
 	display: flex;
 	flex-flow: row wrap;
-	color: silver;	
+	color: silver;
 }
-.sms div
-{
+
+.sms div {
 	padding: 50px;
 }
-.address
-{
-	flex:2;
-	background: linear-gradient(135deg, #000000 0%,#45484d 100%);
+
+.address {
+	flex: 2;
+	background: linear-gradient(135deg, #000000 0%, #45484d 100%);
 	font-family: 'Julius Sans One', sans-serif;
 }
-.media h3
-{
+
+.media h3 {
 	font-family: 'Julius Sans One', sans-serif;
 }
-.media
-{
-	flex:3;
-	background: linear-gradient(135deg, #45484d 0%,#000000 100%);
-	display:flex;
+
+.media {
+	flex: 3;
+	background: linear-gradient(135deg, #45484d 0%, #000000 100%);
+	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.facebook
-{
-	flex:1;
+
+.facebook {
+	flex: 1;
 }
-.instagram
-{
-	flex:1;
+
+.instagram {
+	flex: 1;
 }
-.twitter
-{
-	flex:1;
+
+.twitter {
+	flex: 1;
 }
-.media div
-{
+
+.media div {
 	padding: 2vw;
 }
-.twitter i
-{
+
+.twitter i {
 	color: rgb(41, 174, 236);
 }
-.instagram i
-{
-	color:blueviolet;
+
+.instagram i {
+	color: blueviolet;
 }
-.media i:hover
-{
-	font-size:50px;
+
+.media i:hover {
+	font-size: 50px;
 	text-shadow: 2px 2px rgb(243, 179, 4);
 }
-@media screen and (max-width:404px)
-{
-	.sms{
+
+@media screen and (max-width:404px) {
+	.sms {
 		display: flex;
 		flex-flow: row wrap;
 		color: silver;
-	}.media{
-		flex:3;
-		background-color:black;
-		display:flex;
+	}
+	.media {
+		flex: 3;
+		background-color: black;
+		display: flex;
 		flex-flow: column wrap;
 		align-items: center;
 		font-family: Arial, Helvetica, sans-serif;
 	}
-
 }
